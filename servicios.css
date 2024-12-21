@@ -1,0 +1,385 @@
+/* Importación de fuentes al inicio */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: hsl(38, 92%, 58%);
+    --first-color-light: hsl(38, 100%, 78%);
+    --first-color-alt: hsl(32, 75%, 50%);
+    --second-color: hsl(195, 75%, 52%);
+    --dark-color: hsl(212, 40%, 12%);
+    --white-color: hsl(212, 4%, 95%);
+    --body-color: hsl(212, 42%, 15%);
+    --container-color: hsl(212, 42%, 20%);
+}  
+/* Reset CSS básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+/* Header */
+
+header{
+    font-family: 'Poppins';
+}
+header .navbar{
+    transition: 0.5s;
+}
+
+
+/* Zona 1 (sección principal) */
+.service {
+    color: #000;
+    text-align: center;
+}
+
+.c-item{
+    height: 740px;
+}
+
+.c-img{
+    height: 100%;
+    filter: brightness(0.6);
+    object-fit: cover;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.text{
+    width: 48%;
+}
+
+.btn {
+  margin-top: 20px;
+  background: #00c6ff;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #00c6ff;
+  margin-right: 30px;
+  padding: 15px 40px;
+  border-radius: 50px;
+  color: #000;
+  font-weight: bold;
+  font-family: 'Poppins';
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #164451;
+
+}
+
+.Titulo{
+  font-family: 'Poppins';
+  font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+  }
+  
+  .Slider-Frame {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+}
+
+.Slider-Frame ul {
+    display: flex;
+    animation: slide 15s infinite ease-in-out;
+    width: 300%; /* Ajuste para 3 slides */
+    padding: 0;
+    margin: 0;
+}
+
+.Slider-Frame li {
+    list-style: none;
+    width: 33.33%; /* Cada li debe ocupar un tercio del ancho */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.Slider-Frame img {
+    width: 100%; /* Ajuste para ocupar todo el espacio del li */
+    height: auto;
+}
+
+.servicio{
+    background-image: url('IMG/towfiqu-barbhuiya\ -\ 9gPKrsbGmc-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 120vh; /* Puedes ajustar esta altura según tus necesidades */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo semitransparente */
+    font-family: 'Poppins';
+}
+
+.card-title{
+    font-size: 5vh;
+}
+
+.card-group .card{
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo semitransparente */
+}
+
+.card-group .card {
+    margin-bottom: 20px;
+    margin-top: 15vh;
+    margin-right: 20px; /* Añadir margen a la derecha para separar las cards */
+    
+  }
+  .card-img-top {
+    height: 300px; /* Ajusta la altura de la imagen según sea necesario */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+    
+  }
+
+@keyframes slide {
+    0% { margin-left: 0; }
+    30% { margin-left: 0; }
+    33.33% { margin-left: -100%; }
+    63.33% { margin-left: -100%; }
+    66.66% { margin-left: -200%; }
+    96.66% { margin-left: -200%; }
+}
+
+p{
+  text-align: justify;
+  font-size: 3vh;
+  
+}
+
+.text p{
+  font-family: 'Poppins';
+}
+.carousel-item h5{
+  font-size: 15vh;
+  font-family: 'Poppins';
+}
+
+/* Footer */
+.footer {
+    background-color: #34495e;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-links {
+    flex: 1 0 25%;
+    padding: 0 15px;
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #f2f2f2;
+    border-bottom: 2px solid #bdc3c7;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #f0f0f0;
+    display: block;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #fff;
+}
+
+.social-link a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #666;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.social-link a:hover {
+    background-color: #333;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .zona1 h1, h1 {
+        font-size: 60px;
+    }
+
+    .card-box {
+        width: calc(50% - 40px); /* 2 columnas con margen */
+    }
+
+    header .zona1{
+        background-position: calc(50% - 20px) center;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .zona1 h1, h1 {
+        font-size: 40px;
+    }
+
+    .card-box {
+        width: calc(100% - 40px); /* 1 columna con margen */
+    }
+
+    .zona1{
+        background-position: calc(50% - 20%) center;
+    }
+}
+
+@media (max-width: 480px) {
+    .zona1 h1 {
+        font-size: 24px; /* Tamaño de letra fijo para pantallas muy pequeñas */
+        background-position: calc(50% -20px) center;
+    }
+
+    .card-box {
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    .card-box h2 {
+        font-size: 18px;
+    }
+
+    .zona1{
+        background-position: calc(50% - -170px) center;
+    }
+    .text{
+      width: 100%;
+    }
+    .servicio{
+        height: 350vh;
+    }
+
+    .card-group .card{
+        margin-right: 0%;
+    }
+}
+
+@media (max-width: 576px) {
+  .carousel-caption h5 {
+    font-size: 5rem; /* Tamaño de texto más pequeño para pantallas pequeñas */
+  }
+
+}
+
+/* Media Query para dispositivos con un ancho máximo de 320px */
+@media (max-width: 320px) {
+    .servicio{
+        height: 10000vh;
+    }
+    .zona1{
+        background-position: calc(50% - 18.6%) center;
+    }
+
+    .zona1 h1 {
+        font-size: 20px; /* Tamaño de letra fijo para pantallas muy pequeñas */
+        margin-bottom: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .card{
+        margin-right: 0;
+    }
+
+    .card-box {
+        width: calc(100% - 20px); /* 1 columna con margen */
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .card-box h2 {
+        font-size: 16px;
+    }
+
+    .card-box p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .boton {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    .footer {
+        padding: 40px 0;
+    }
+
+    .footer-links {
+        flex: 1 0 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-links h4 {
+        font-size: 16px;
+    }
+
+    .footer-links ul li a {
+        font-size: 14px;
+    }
+
+    .social-link a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin-right: 5px;
+    }
+
+    
+    
+}

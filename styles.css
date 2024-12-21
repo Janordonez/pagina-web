@@ -1,0 +1,718 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}   
+
+body{
+    background-color: #f2f2f2;
+}
+
+header .navbar{
+    transition: 0.5s;
+}
+
+.zona1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(IMG/man3.png);
+    background-size: cover; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; /* Esto asegura que la imagen cubra todo el área */
+}
+
+.zona1 h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 6vw;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 70px;
+    margin-bottom: 0;
+    color: #f2f2f2;
+}
+
+h2 {
+    text-align: center;
+}
+
+span {
+    font-size: 50px;
+    font-weight: 300;
+    color: #f2f2f2;
+}
+
+h3 {
+    font-size: 3em;
+}
+
+.container {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1300px;
+    margin: 2px auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+main .logo {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+.texto-quees h2{
+    font-family: 'Poppins';
+}
+
+.texto-quees p{
+    margin-top: 40px;
+}
+
+.main .logo {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container-Historia {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-Historia,
+.Texto-historia {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.Texto-historia {
+    display: flex;
+    flex-direction: column;
+}
+
+.Texto-historia h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Texto-historia p {
+    margin-top: 50px;
+    margin-left: 5px;
+    font-weight: 500;
+    text-align: justify;
+    line-height: 35px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-Historia h2 span {
+    font-size: 23px;
+    background: #2980B9;
+    color: #f2f2f2;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 #f2f2f2;
+    margin-right: 5px;
+}
+
+.Slider-Frame {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+}
+
+.Slider-Frame ul {
+    display: flex;
+    animation: slide 15s infinite ease-in-out;
+    width: 500%; /* Assuming you have 5 slides */
+    padding: 0; /* Ensuring no extra padding */
+    margin: 0; /* Ensuring no extra margin */
+}
+
+.Slider-Frame li {
+    list-style: none;
+    width: 20%; /* Each li should take up 20% if there are 5 slides */
+}
+
+.Slider-Frame img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes slide {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+    75% { margin-left: -300%; }
+    95% { margin-left: -300%; }
+}
+
+.desarrollo {
+    background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('IMG/Fondo.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.desarrollo h2 {
+    text-align: center;
+    color: #f2f2f2;
+    margin-top: 2px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding-top: 250px;
+}
+
+.card {
+    width: 325px;
+    background: linear-gradient(to left, #0072ff, #00c6ff);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+    
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-content h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-content p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.3;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-content .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f2f2f2;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 16px;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: #34495e;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-links {
+    flex: 1 0 25%;
+    padding: 0 15px;
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #f2f2f2;
+    border-bottom: 2px solid #bdc3c7;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #f0f0f0;
+    display: block;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #fff;
+}
+
+.social-link a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #666;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.social-link a:hover {
+    background-color: #333;
+}
+/* Responsive Styles */
+
+@media (max-width: 1200px) {
+
+    .zona1 h1, h1 {
+        font-size: 60px;
+        height: auto;
+        width: auto;
+    }
+
+    span {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 2.5em;
+    }
+
+    .card-container {
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 280px; /* Reduciendo el ancho de la tarjeta */
+    }
+
+    
+}
+
+/* Tablets y dispositivos de tamaño intermedio */
+@media (max-width: 992px) {
+    .zona1 h1, h1 {
+        font-size: 50px;
+    }
+
+    .card {
+        width: 250px; /* Ajustando el ancho de la tarjeta */
+    }
+
+    .card-container {
+        justify-content: space-evenly;
+    }
+
+   
+}
+
+/* Teléfonos móviles grandes y tablets en modo vertical */
+@media (max-width: 768px) {
+
+    .header .zona1{
+        background-position: calc(50% - 20px) center;
+    }
+
+    .zona1 h1, h1 {
+        font-size: 40px;
+        background-position: calc(50% - 20px) center;
+    }
+
+    span {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    .container-Historia {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen-Historia,
+    .Texto-historia {
+        width: 100%;
+    }
+
+    .Slider-Frame {
+        max-width: 100%;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 275px;
+    }
+
+    .card {
+        width: 90%; /* Haciendo las tarjetas casi del ancho completo del contenedor */
+        max-width: 350px;
+        margin: 15px 0;
+    }
+
+}
+
+/* Teléfonos móviles medianos */
+@media (max-width: 576px) {
+
+
+    .zona1{
+        background-position: calc(50% - 20%) center;
+    }
+
+    .zona1 h1, h1 {
+        font-size: 30px;
+        background-position: calc(50% - 30%) center;
+    }
+
+    span {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 1.8em;
+    }
+
+    .Texto-historia p {
+        margin-top: 20px;
+        margin-left: 0;
+        line-height: 25px;
+    }
+
+    .card { 
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .desarrollo{
+        height: 150vh;
+    }
+
+    .Valores1{
+        font-size: 10vh;
+    }
+
+    video{
+        height: 300px;
+    }
+
+   
+}
+
+/* Teléfonos pequeños como iPhone SE */
+@media (max-width: 375px) {
+    .zona1{
+        background-position: calc(50% - -170px) center;
+    }
+
+    .zona1 h1, h1 {
+        font-size: 30px;
+        
+    }
+
+    span {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    .card-content h3 {
+        font-size: 24px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 280px;
+        margin: 10px 0;
+    }
+
+    .desarrollo{
+        height: 140vh;
+    }
+
+    .Valores1 h2{
+        font-size: 5vh;
+    }
+
+    video{
+        height: 300px;
+    }
+    
+
+}
+
+/* Dispositivos muy pequeños */
+@media (max-width: 320px) {
+   
+    video{
+        height: 300px;
+    }
+
+    .header .zona1{
+        background-position: calc(50% - 10%) center;
+    }
+
+
+    .zona1 h1, h1 {
+        font-size: 18px;
+        height: auto;
+        width: auto;
+    }
+
+    
+    span {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .card-content h3 {
+        font-size: 20px;
+    }
+
+    .card-content p {
+        font-size: 14px;
+    }
+
+    .card-content .btn {
+        padding: 6px 12px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .desarrollo{
+        height: 160vh;
+    }
+
+    .footer {
+        padding: 40px 0;
+    }
+
+    .footer-links {
+        flex: 1 0 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-links h4 {
+        font-size: 16px;
+    }
+
+    .footer-links ul li a {
+        font-size: 14px;
+    }
+
+    .social-link a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin-right: 5px;
+    }
+
+
+}
+
+.Valores{
+    overflow-x: hidden;
+    padding: 60px;
+}
+
+.Valores1{
+    margin-top: 20px;
+    font-family: 'Poppins';
+    font-size: 10vh;
+}
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.Texto-head{
+    color: rgb(75, 75, 75);
+    font-family: 'Poppins';
+    font-size: 10px;;
+    text-align: center;
+
+
+}
+
+.contenedor{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    
+}
+
+.text-box{
+    padding: 20px 30px;
+    background: linear-gradient(to left, #0072ff, #00c6ff);
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #fff;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.left-contenedor{
+    left: 0%;
+}
+
+.right-contenedor{
+    left: 50%;
+}
+
+.timeline::after{
+    content: " ";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: linear-gradient(to left, #0072ff, #00c6ff);
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    animation: moveline 6s linear forwards;
+}
+
+@keyframes moveline {
+    0%{
+        height: 0;
+    }
+
+    100%{
+        height: 100%;
+    }
+} 
+
+.contenedor .numeracion{
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+    border-radius:50px;
+    background: linear-gradient(to left, #0072ff, #00c6ff);
+    color: #fff;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.right-contenedor .numeracion{
+    left: -20px;
+}
+
+.left-contenedor-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #0072ff;
+    right: -15px;
+}
+
+.right-contenedor-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #0072ff;
+    left: -15px;
+}
+
+@media screen and (max-width: 600px){
+    
+    .timeline{
+        margin: auto auto;
+    }
+
+    .timeline::after{
+        left: 31px;
+    }
+
+    .contenedor{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+
+    .text-box{
+        font-size: 13px;
+    }
+
+    .right-contenedor{
+        left: 0;
+    }
+
+    .left-contenedor .numeracion, .right-contenedor .numeracion{
+        left: 10px;
+    }
+
+    .left-contenedor-arrow, .right-contenedor-arrow{
+        border-right: 15px solid #0072ff;
+        border: 0;
+        left: -15px;
+    }
+}

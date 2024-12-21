@@ -1,0 +1,449 @@
+/* Importación de fuentes al inicio */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset CSS básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    font-family: 'Poppins';
+}
+
+header .navbar{
+    transition: 0.5s;
+}
+
+/* Zona de héroe */
+#hero {
+    width: 100%;
+    height: 805px; /* Altura específica para desktop */
+    background-image:
+        linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url(IMG/Hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 32px;
+}
+
+@media screen and (max-width: 1024px) {
+    #hero {
+        height: 100vh; /* Ajuste de altura para dispositivos más pequeños */
+    }
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.hero-box {
+    width: 50%;
+    margin-top: 200px; /* Ajuste para la posición del contenido */
+}
+
+.hero-box .hero-heading {
+    color: #fff;
+    font-size: 50px;
+    line-height: 65px;
+    font-family: 'Poppins';
+}
+
+.hero-box .hero-desc {
+    color: #fff;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 30px 0;
+}
+
+.hero-box .btn-box {
+    margin-top: 60px;
+}
+
+.hero-box .cta-btn {
+    background: #00c6ff;
+    margin-right: 30px;
+    padding: 15px 40px;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Poppins';
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+.hero-box .cta-btn:hover {
+    background: #164451;
+}
+
+/* Sección del formulario */
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajuste para cubrir toda la pantalla */
+    background: linear-gradient(to right, #0053b9, #0093bb);
+}
+
+.container-form {
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto; /* Ajuste de margen para centrar */
+}
+
+.container-form .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.container-form .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(to right, #0053b9, #0093bb);
+}
+
+form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+form .user-details .input-box {
+    margin: 20px 0 12px 0;
+    width: calc(50% - 20px);
+}
+
+.user-details .input-box .details {
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.gender-details {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.gender-title {
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.category {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.category label {
+    display: flex;
+    align-items: center;
+}
+
+.category .dot {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #ccc;
+    display: inline-block;
+}
+
+.category input[type="radio"] {
+    display: none;
+}
+
+.category input[type="radio"]:checked + .dot {
+    background: #0053b9;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.button input[type="submit"] {
+    background: #0053b9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button input[type="submit"]:hover {
+    background: #003f8a;
+}
+
+/* Footer */
+.footer {
+    background-color: #34495e;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-links {
+    flex: 1 0 25%;
+    padding: 0 15px;
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #f2f2f2;
+    border-bottom: 2px solid #bdc3c7;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #f0f0f0;
+    display: block;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #fff;
+}
+
+.social-link a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #666;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.social-link a:hover {
+    background-color: #333;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .hero-box {
+        width: 80%;
+        margin-top: 100px;
+        padding-top: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .container-form {
+        margin: 50px auto;
+    }
+
+    .footer-links {
+        width: 50%;
+    }
+    .footer {
+        padding: 40px 0;
+    }
+
+    .footer-links {
+        flex: 1 0 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-links h4 {
+        font-size: 16px;
+    }
+
+    .footer-links ul li a {
+        font-size: 14px;
+    }
+
+    .social-link a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-box .hero-heading {
+        font-size: 40px;
+        line-height: 45px;
+        padding-top: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .footer-links {
+        width: 100%;
+    }
+
+    form .user-details .input-box {
+        width: 100%;
+    }
+    .footer {
+        padding: 40px 0;
+    }
+
+    .footer-links {
+        flex: 1 0 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-links h4 {
+        font-size: 16px;
+    }
+
+    .footer-links ul li a {
+        font-size: 14px;
+    }
+
+    .social-link a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero {
+        height: 130vh; /* Ajuste de altura para dispositivos pequeños */
+    }
+
+    .hero-box .hero-heading {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .hero-box {
+        width: 100%;
+        padding-top: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .hero-box .btn-box {
+        margin-top: 30px;
+    }
+
+    .hero-box .cta-btn {
+        margin-right: 15px;
+        padding: 10px 20px;
+    }
+
+    .container-form .title {
+        font-size: 20px;
+    }
+
+    .container-form {
+        padding: 15px 20px;
+    }
+
+    .footer {
+        padding: 40px 0;
+    }
+
+    .footer-links {
+        flex: 1 0 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-links h4 {
+        font-size: 16px;
+    }
+
+    .footer-links ul li a {
+        font-size: 14px;
+    }
+
+    .social-link a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin-right: 5px;
+    }
+}
+    
+@media (max-width: 320px) {
+    .footer {
+        padding: 40px 0;
+    }
+
+    .footer-links {
+        flex: 1 0 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-links h4 {
+        font-size: 16px;
+    }
+
+    .footer-links ul li a {
+        font-size: 14px;
+    }
+
+    .social-link a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin-right: 5px;
+    }
+}
